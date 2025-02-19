@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to right,#a456f7,#ff4556,#213456);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+.head h2{
+    font-size: 20px;
+    padding: 20px;
+    display: inline;
+}
+.head img{
+    width: 25px;
+    height: 25px;
+    padding-top: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+.row form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+#btn{
+    margin-left: 60px;
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+ul li{
+    font-size: 20px;
+    margin-left: 5px;
+    list-style: none;
+    line-height: 40px;
+    user-select: none;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+}
+ul li::before{
+   position: absolute;
+   content: '';
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   background-image: url(circle.jpeg);
+   background-size: cover;
+   background-position: center;
+   top: 18px;
+   left: 20px;
+}
+ul li.checked{
+    color: rgb(9, 9, 9);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(tick.jpg);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #ef867b;
+}
